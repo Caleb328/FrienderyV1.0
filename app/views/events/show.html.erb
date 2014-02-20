@@ -1,0 +1,20 @@
+<p>
+	<strong>Event Name:</strong>
+	<%= @event.name %>
+	<strong>Number Of People:</strong>
+	<%= @event.numberofpeople %>
+</p>
+
+<p>
+	<strong>When:</strong>
+	<%= @event.when %>
+	<strong>Where:</strong>
+	<%= @event.where %>
+</p>
+
+<p>
+	<strong>Description:</strong><br>
+	<%= @event.description %>
+</p>
+
+<%= link_to 'Back', events_path %>|<%= link_to 'Edit', edit_event_path(@event) %>
